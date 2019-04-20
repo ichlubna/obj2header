@@ -1,4 +1,4 @@
-#Obj to C header converter
+# Obj to C header converter
 
 Converts the obj 3D model into a C header file including the model vertex data in the following format (not present attributes are omited):
 
@@ -15,14 +15,14 @@ const unsigned int modelIndices[M] = {...
 
 Vertex deduplication is performed so M >= N
 
-##Build
+## Build
 
 ```
 wget https://github.com/syoyo/tinyobjloader/raw/master/tiny_obj_loader.h
 make
 ```
 
-##Usage
+## Usage
 
 ```
 ./obj2header input.obj output.h
